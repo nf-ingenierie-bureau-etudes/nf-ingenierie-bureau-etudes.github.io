@@ -27,13 +27,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
   font-size: 1.6rem;
   cursor: default;
 }
 
 header .logo {
-  font-weight: bold;
   cursor: pointer;
+  flex: 0 0 auto;
+}
+
+header .logo img {
+  display: block;
+  height: 105px;
+  width: auto;
+  max-width: 240px;
+  object-fit: contain;
 }
 
 nav button {
@@ -189,14 +198,31 @@ footer {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 16px 20px;
+  }
+
+  header .logo img {
+    height: 90px;
+    max-width: 220px;
+  }
+
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 18px;
+  }
+
   .missions-grid {
     flex-direction: column;
     align-items: center;
   }
 
   nav button {
-    margin-left: 20px;
-    font-size: 1.4rem;
+    margin-left: 0;
+    font-size: 1.2rem;
   }
 
   .hero, .content {
