@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | NF Ingénierie</title>
+  <meta name="description" content="Contactez NF Ingénierie, bureau d’études CVC, énergie et maîtrise d’œuvre.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <h1>NF Ingénierie</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="index.html#presentation">Présentation</a>
+      <a href="index.html#domaines">Services</a>
+      <a href="index.html#actualites">Actualités</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="contact-hero">
+  <h2>Contact</h2>
+  <p>Un projet ? Une étude ? Parlons-en.</p>
+</section>
+
+<!-- SECTION CONTACT -->
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- INFOS -->
+    <div class="contact-info">
+      <h3>NF Ingénierie</h3>
+      <p>
+        Bureau d’études techniques spécialisé en génie climatique,
+        énergie et maîtrise d’œuvre.
+      </p>
+
+      <ul>
+        <li><strong>📍 Zone d’intervention :</strong> France entière</li>
+        <li><strong>✉️ Email :</strong> contact@nf-ingenierie.fr</li>
+        <li><strong>📞 Téléphone :</strong> 06 XX XX XX XX</li>
+      </ul>
+    </div>
+
+    <!-- FORMULAIRE -->
+    <div class="contact-form">
+      <h3>Formulaire de contact</h3>
+
+      <form id="contactForm">
+        <label for="name">Nom / Société</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="subject">Objet</label>
+        <select id="subject" required>
+          <option value="">Choisir un sujet</option>
+          <option>Audit / Diagnostic</option>
+          <option>Études thermiques</option>
+          <option>Maîtrise d'œuvre</option>
+          <option>Énergies renouvelables</option>
+          <option>Autre demande</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Envoyer</button>
+        <p id="formStatus" class="form-status"></p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 NF Ingénierie – Bureau d’études techniques</p>
+</footer>
+
+<script src="assets/js/contact.js"></script>
+</body>
+</html>

@@ -1,28 +1,222 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Liste de pétitions</title>
+<meta charset="UTF-8">
+<title>NF Ingénierie – Bureau d’études</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NF Ingénierie – Bureau d’études CVC, thermique et maîtrise d’œuvre.">
+<link rel="stylesheet" href="assets/css/style.css">
+
+
 </head>
 <body>
-  <h1>Liste de pétitions publiques</h1>
 
-  <p>
-    Cette page rassemble des liens vers des pétitions.
-    Elle est indépendante des plateformes qui hébergent les pétitions.
-    Elle ne collecte aucune signature.
-    Les signatures sont réalisées directement sur les plateformes officielles ou les sites hébergeant les pétitions.
-  </p>
+<header>
+  <div class="logo">Logo NF Ingénierie</div>
+  <nav>
+    <button data-target="presentation">Présentation</button>
+    <button data-target="clients">Nos clients</button>
+    <button data-target="domaines">Nos domaines</button>
+    <button data-target="actualites">Actualités</button>
+    <button data-target="contact">Contact</button>
+  </nav>
+</header>
 
-  <h2>Pétitions</h2>
+<main>
 
-  <ul>
-    <li>
-      <a href="https://petitions.assemblee-nationale.fr/initiatives/i-6098" target="_blank">
-        Non à la recentralisation et à la fragilisation des politiques environnementales - Préservation du réseau territorial de l'ADEME
-      </a>
-    </li>
-  </ul>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Bureau d’études CVC & Thermique</h1>
+    <p>Ingénierie – Maîtrise d’œuvre – Performance énergétique</p>
+  </section>
 
+  <!-- SECTIONS PRINCIPALES -->
+  <section id="presentation" class="content">
+    <h2>Présentation</h2>
+    <p><strong>NF Ingénierie</strong> est un bureau d’études intervenant dans le domaine du bâtiment, spécialisé dans l’ingénierie et la maîtrise d’œuvre des lots techniques, pour des opérations de construction, de rénovation et de réhabilitation.</p>
+
+    <ul>
+      <li><strong>Génie climatique & plomberie</strong> : Chauffage, ventilation, climatisation et plomberie sanitaire, incluant les installations de production, de distribution et de régulation.</li>
+      <li><strong>Électricité</strong> : Installations électriques en courants forts et courants faibles, comprenant la distribution électrique, l’éclairage, les réseaux de communication et les systèmes de sûreté.</li>
+      <li><strong>Gestion Technique du bâtiment</strong> : Systèmes de gestion et de supervision des équipements techniques (GTC et GTB), permettant le pilotage et le suivi du fonctionnement des installations.</li>
+      <li><strong>Énergies renouvelables</strong> : Systèmes de production d’énergie à partir de sources renouvelables, notamment photovoltaïque, solaire thermique, géothermie, biomasse et cogénération.</li>
+      <li><strong>NF Ingénierie</strong> intervient sur des bâtiments tertiaires, résidentiels et industriels, pour le compte de maîtres d’ouvrage publics et privés.</li>
+    </ul>
+  </section>
+
+  <section id="clients" class="content">
+    <h2>Nos clients</h2>
+    <p><strong>NF Ingénierie</strong> intervient sur des opérations concernant: <br>
+      Des établissements recevant du public (ERP), des établissements recevant des travailleurs (ERT). <br>
+      Des bâtiments résidentiels et des immeubles de grande hauteur (IGH). <br>
+      Chaque typologie de bâtiment est abordée en tenant compte des exigences réglementaires spécifiques, des contraintes techniques et des conditions d’exploitation associées.
+    </p>
+  </section>
+
+  <section id="domaines" class="content">
+    <h2>Nos domaines</h2>
+    <p><strong>Les domaines d’intervention de NF Ingénierie comprennent:</strong></p>
+    <ul>
+      <li><strong>Génie climatique et plomberie :</strong> <br> Chauffage, ventilation, climatisation et plomberie sanitaire, incluant les installations de production, de distribution, de régulation et les réseaux associés.</li>
+      <li><strong>Électricité – courants forts et courants faibles :</strong> <br> Installations électriques en courants forts et courants faibles, comprenant la distribution électrique, l’éclairage, les réseaux de communication et les systèmes de sécurité et de sûreté.</li>
+      <li><strong>Gestion technique du bâtiment (GTC / GTB) :</strong> <br> Systèmes de gestion et de supervision des équipements techniques du bâtiment, permettant le pilotage et le suivi du fonctionnement des installations.</li>
+      <li><strong>Énergies et systèmes de production :</strong> <br> Systèmes de production d’énergie, incluant l’intégration de solutions à partir de sources renouvelables telles que le photovoltaïque, le solaire thermique, la géothermie, la biomasse et la cogénération.</li>
+    </ul>
+  </section>
+
+  <section id="actualites" class="content">
+    <h2>Actualités</h2>
+    <div class="actus-grid">
+
+      <article class="actu-card">
+        <div class="actu-content">
+          <h3>Titre de l’actualité</h3>
+          <p class="actu-date">Mars 2025</p>
+          <p>Texte de l’actualité. Présentation d’un projet, d’une mission, d’une évolution réglementaire ou d’une information importante concernant NF Ingénierie.</p>
+        </div>
+      </article>
+
+      <article class="actu-card">
+        <div class="actu-content">
+          <h3>Nouveau projet en cours</h3>
+          <p class="actu-date">Février 2025</p>
+          <p>Description du projet, du type de bâtiment, des lots techniques concernés et des objectifs énergétiques.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="contact" class="content">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Nom / Société" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Votre projet" required></textarea>
+      <button type="submit">Envoyer</button>
+      <p id="formStatus" class="form-status"></p>
+    </form>
+  </section>
+
+  <!-- MISSIONS SUR PAGE D'ACCUEIL -->
+  <section id="missions-home" class="content">
+    <h2>Nos missions</h2>
+    <div class="missions-grid">
+
+      <div class="mission-card" data-mission="etudes">
+        <h3>Conseils & Études</h3>
+        <ul class="mission-preview">
+          <li>Audit</li>
+          <li>Diagnostic technique</li>
+          <li>Faisabilité</li>
+        </ul>
+      </div>
+
+      <div class="mission-card" data-mission="moe">
+        <h3>Maîtrise d'œuvre & Ingénierie</h3>
+        <ul class="mission-preview">
+          <li>ESQ</li>
+          <li>AVP</li>
+          <li>PRO-DCE</li>
+          <li>ACT</li>
+        </ul>
+      </div>
+
+      <div class="mission-card" data-mission="exe">
+        <h3>Exécution & Pilotage</h3>
+        <ul class="mission-preview">
+          <li>EXE</li>
+          <li>VISA</li>
+          <li>DET</li>
+          <li>OPR</li>
+          <li>AOR</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DÉTAILS DES MISSIONS -->
+  <section id="etudes" class="content mission-detail-page">
+    <h2>Conseils & Études</h2>
+
+    <h4>1) Audits & diagnostics techniques</h4>
+    <ul>
+      <li>Audits énergétiques réglementaires</li>
+      <li>Audits fonctionnels des installations CVC</li>
+      <li>Inspections par caméra thermique</li>
+    </ul>
+
+    <h4>2) Études réglementaires & thermiques</h4>
+    <ul>
+      <li>RT 2012 – RE 2020 – THCE ex</li>
+      <li>DPE – Diagnostics de performance énergétique</li>
+      <li>Simulation thermique STD / SED</li>
+      <li>Confort thermique et QAI</li>
+      <li>Solutions passives</li>
+    </ul>
+
+    <h4>3) Réglementation & conformité énergétique</h4>
+    <ul>
+      <li>Décret Tertiaire</li>
+      <li>Décret BACS</li>
+      <li>Suivi réglementaire</li>
+    </ul>
+
+    <h4>4) Ingénierie CVC & exploitation</h4>
+    <ul>
+      <li>Audits et optimisation CVC</li>
+      <li>Inventaire équipements</li>
+      <li>Marchés d’exploitation</li>
+    </ul>
+
+    <h4>5) Financements & performance économique</h4>
+    <ul>
+      <li>Dossiers CEE</li>
+      <li>Optimisation financière</li>
+    </ul>
+
+    <h4>6) Énergies renouvelables</h4>
+    <ul>
+      <li>Photovoltaïque</li>
+      <li>Solaire thermique</li>
+      <li>Cogénération</li>
+      <li>Géothermie</li>
+      <li>Biomasse</li>
+      <li>Récupération de chaleur</li>
+    </ul>
+  </section>
+
+  <section id="moe" class="content mission-detail-page">
+    <h2>Maîtrise d'œuvre & Ingénierie</h2>
+    <ul>
+      <li><strong>ESQ :</strong> définition des intentions et principes techniques</li>
+      <li><strong>DIAG :</strong> analyse de l’existant</li>
+      <li><strong>APS :</strong> orientations techniques et faisabilité</li>
+      <li><strong>APD :</strong> consolidation des choix et coûts</li>
+      <li><strong>PRO :</strong> études détaillées du projet</li>
+      <li><strong>DCE :</strong> consultation des entreprises</li>
+      <li><strong>ACT :</strong> assistance à la passation des marchés</li>
+    </ul>
+  </section>
+
+  <section id="exe" class="content mission-detail-page">
+    <h2>Exécution & Pilotage</h2>
+    <ul>
+      <li><strong>EXE :</strong> études d’exécution</li>
+      <li><strong>VISA :</strong> visa des documents entreprises</li>
+      <li><strong>DET :</strong> suivi de l’exécution des travaux</li>
+      <li><strong>OPR :</strong> opérations préalables à la réception</li>
+      <li><strong>AOR :</strong> assistance à la réception</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 NF Ingénierie
+</footer>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/contact.js"></script>
 </body>
 </html>
