@@ -2,90 +2,199 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Contact | NF Ingénierie</title>
-  <meta name="description" content="Contactez NF Ingénierie, bureau d’études CVC, énergie et maîtrise d’œuvre.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="theme-color" content="#76cf6d">
+  <link rel="canonical" href="https://nf-ingenierie-bureau-etudes.github.io/contact.html">
+  <title>Contact | NF Ingénierie — Bureau d’études techniques</title>
+  <meta
+    name="description"
+    content="Contactez NF Ingénierie pour présenter votre projet d’étude, de maîtrise d’œuvre, de rénovation énergétique ou de lots techniques du bâtiment."
+  >
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="container">
-    <h1>NF Ingénierie</h1>
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="index.html#presentation">Présentation</a>
-      <a href="index.html#domaines">Services</a>
-      <a href="index.html#actualites">Actualités</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </div>
-</header>
+  <!-- =========================
+       EN-TÊTE
+  ========================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="NF Ingénierie — retour à l’accueil">
+        <img
+          class="brand-mark"
+          src="assets/images/favicon.png"
+          alt=""
+          width="256"
+          height="256"
+          aria-hidden="true"
+        >
+        <span class="brand-name">NF Ingénierie</span>
+      </a>
 
-<!-- HERO -->
-<section class="contact-hero">
-  <h2>Contact</h2>
-  <p>Un projet ? Une étude ? Parlons-en.</p>
-</section>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+        aria-label="Ouvrir le menu principal"
+      >
+        <span class="menu-toggle-line" aria-hidden="true"></span>
+        <span class="menu-toggle-line" aria-hidden="true"></span>
+        <span class="menu-toggle-line" aria-hidden="true"></span>
+      </button>
 
-<!-- SECTION CONTACT -->
-<section class="contact-section">
-  <div class="contact-container">
+      <nav id="main-navigation" class="main-nav" aria-label="Navigation principale">
+        <a href="index.html#presentation">Présentation</a>
+        <a href="index.html#expertises">Expertises</a>
+        <a href="index.html#missions">Missions</a>
+        <a href="index.html#batiments">Bâtiments</a>
+        <a class="nav-cta active" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- INFOS -->
-    <div class="contact-info">
-      <h3>NF Ingénierie</h3>
-      <p>
-        Bureau d’études techniques spécialisé en génie climatique,
-        énergie et maîtrise d’œuvre.
-      </p>
+  <main id="contenu">
+    <!-- =========================
+         INTRODUCTION CONTACT
+    ========================== -->
+    <section class="contact-hero" aria-labelledby="contact-title">
+      <div class="container contact-hero-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h1 id="contact-title">Parlons de votre projet.</h1>
+          <p>
+            Décrivez brièvement votre besoin, le type de bâtiment et la phase de votre projet.
+            Le formulaire prépare un e-mail dans votre logiciel de messagerie : aucune donnée
+            n’est envoyée ou stockée directement par ce site.
+          </p>
+        </div>
 
-      <ul>
-        <li><strong>📍 Zone d’intervention :</strong> France entière</li>
-        <li><strong>✉️ Email :</strong> contact@nf-ingenierie.fr</li>
-        <li><strong>📞 Téléphone :</strong> 06 XX XX XX XX</li>
-      </ul>
+        <aside class="contact-direct" aria-labelledby="direct-title">
+          <p class="contact-label" id="direct-title">Contact direct</p>
+          <a href="mailto:contact@nf-ingenierie.fr">contact@nf-ingenierie.fr</a>
+          <p>Zone d’intervention : France entière</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- =========================
+         FORMULAIRE
+    ========================== -->
+    <section class="section contact-section" aria-labelledby="form-title">
+      <div class="container contact-layout">
+        <div class="contact-guidance">
+          <p class="eyebrow">Préparer votre demande</p>
+          <h2>Quelques informations suffisent pour commencer</h2>
+          <p>
+            Un premier message peut simplement préciser la nature de l’opération, les lots
+            techniques concernés et l’étape actuelle du projet.
+          </p>
+
+          <ul class="contact-points">
+            <li>Construction, rénovation ou réhabilitation</li>
+            <li>CVC, plomberie, électricité, GTB/GTC ou énergie</li>
+            <li>Audit, étude, maîtrise d’œuvre ou suivi d’exécution</li>
+          </ul>
+        </div>
+
+        <div class="form-card">
+          <h2 id="form-title">Votre demande</h2>
+
+          <!--
+            GitHub Pages ne traite pas les formulaires côté serveur.
+            contact.js transforme donc les champs ci-dessous en lien « mailto: ».
+            Le site n'affiche jamais un faux message « envoyé avec succès ».
+          -->
+          <form id="contactForm">
+            <div class="form-field">
+              <label for="name">Nom / Société</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="organization"
+                required
+              >
+            </div>
+
+            <div class="form-field">
+              <label for="email">Adresse e-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              >
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Objet de la demande</label>
+              <select id="subject" name="subject" required>
+                <option value="">Sélectionner un sujet</option>
+                <option value="Audit / Diagnostic">Audit / Diagnostic</option>
+                <option value="Études thermiques">Études thermiques</option>
+                <option value="Maîtrise d’œuvre">Maîtrise d’œuvre</option>
+                <option value="Énergies renouvelables">Énergies renouvelables</option>
+                <option value="Autre demande">Autre demande</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Votre projet</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="7"
+                placeholder="Type de bâtiment, nature de l’opération, lots concernés, phase du projet…"
+                required
+              ></textarea>
+            </div>
+
+            <button class="button button-primary form-submit" type="submit">
+              Préparer l’e-mail
+            </button>
+
+            <!-- aria-live permet aux technologies d'assistance d'annoncer le statut. -->
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       PIED DE PAGE
+  ========================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">NF Ingénierie</a>
+        <p>Bureau d’études techniques — Ingénierie &amp; Conseil.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navigation de pied de page">
+        <a href="index.html#expertises">Expertises</a>
+        <a href="index.html#missions">Missions</a>
+        <a href="index.html#batiments">Bâtiments</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="footer-contact">
+        <a href="mailto:contact@nf-ingenierie.fr">contact@nf-ingenierie.fr</a>
+        <p>Zone d’intervention : France entière</p>
+      </div>
     </div>
 
-    <!-- FORMULAIRE -->
-    <div class="contact-form">
-      <h3>Formulaire de contact</h3>
-
-      <form id="contactForm">
-        <label for="name">Nom / Société</label>
-        <input type="text" id="name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" required>
-
-        <label for="subject">Objet</label>
-        <select id="subject" required>
-          <option value="">Choisir un sujet</option>
-          <option>Audit / Diagnostic</option>
-          <option>Études thermiques</option>
-          <option>Maîtrise d'œuvre</option>
-          <option>Énergies renouvelables</option>
-          <option>Autre demande</option>
-        </select>
-
-        <label for="message">Message</label>
-        <textarea id="message" rows="5" required></textarea>
-
-        <button type="submit">Envoyer</button>
-        <p id="formStatus" class="form-status"></p>
-      </form>
+    <div class="container footer-bottom">
+      <p>© <span data-current-year>2026</span> NF Ingénierie.</p>
+      <p>Le formulaire n’enregistre aucune donnée sur le site.</p>
     </div>
+  </footer>
 
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <p>© 2026 NF Ingénierie – Bureau d’études techniques</p>
-</footer>
-
-<script src="assets/js/contact.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
 </body>
 </html>

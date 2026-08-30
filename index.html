@@ -1,224 +1,420 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>NF Ingénierie – Bureau d’études</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="NF Ingénierie – Bureau d’études CVC, thermique et maîtrise d’œuvre.">
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#76cf6d">
+  <link rel="canonical" href="https://nf-ingenierie-bureau-etudes.github.io/">
 
+  <!--
+    Le titre et la description sont volontairement descriptifs : ils aident
+    les visiteurs et les moteurs de recherche à comprendre immédiatement
+    l'activité de NF Ingénierie.
+  -->
+  <title>NF Ingénierie | Bureau d’études CVC, thermique et lots techniques</title>
+  <meta
+    name="description"
+    content="NF Ingénierie accompagne les projets de construction, rénovation et réhabilitation en CVC, plomberie, électricité, GTB/GTC, thermique, énergie et maîtrise d’œuvre."
+  >
 
+  <!-- Métadonnées de partage social. -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="NF Ingénierie | Bureau d’études techniques">
+  <meta
+    property="og:description"
+    content="Ingénierie, études, maîtrise d’œuvre et accompagnement technique pour les projets de bâtiment."
+  >
+  <meta property="og:url" content="https://nf-ingenierie-bureau-etudes.github.io/">
+  <meta
+    property="og:image"
+    content="https://nf-ingenierie-bureau-etudes.github.io/assets/images/logo-nf-ingenierie.png"
+  >
+
+  <!-- Le favicon est une déclinaison compacte du symbole du logo. -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--
+    Données structurées limitées aux informations réellement connues.
+    Aucune adresse, aucun téléphone et aucun chiffre commercial ne sont inventés.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "NF Ingénierie",
+    "url": "https://nf-ingenierie-bureau-etudes.github.io/",
+    "email": "contact@nf-ingenierie.fr",
+    "description": "Bureau d’études techniques intervenant en CVC, thermique, électricité, GTB/GTC, énergie et maîtrise d’œuvre."
+  }
+  </script>
 </head>
 <body>
+  <!--
+    Ce lien n'apparaît qu'au clavier. Il permet de contourner le menu et
+    d'atteindre directement le contenu principal, ce qui améliore l'accessibilité.
+  -->
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
 
-<header>
-  <div class="logo" aria-label="Accueil NF Ingénierie">
-    <img src="assets/images/logo-nf-ingenierie.png" alt="NF Ingénierie – Ingénierie & Conseil">
-  </div>
-  <nav>
-    <button data-target="presentation">Présentation</button>
-    <button data-target="clients">Nos clients</button>
-    <button data-target="domaines">Nos domaines</button>
-    <button data-target="actualites">Actualités</button>
-    <button data-target="contact">Contact</button>
-  </nav>
-</header>
+  <!-- =========================
+       EN-TÊTE ET NAVIGATION
+  ========================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#accueil" aria-label="NF Ingénierie — retour à l’accueil">
+        <img
+          class="brand-mark"
+          src="assets/images/favicon.png"
+          alt=""
+          width="256"
+          height="256"
+          aria-hidden="true"
+        >
+        <span class="brand-name">NF Ingénierie</span>
+      </a>
 
-<main>
+      <!--
+        Le bouton n'est affiché que sur petit écran. Les attributs ARIA sont
+        mis à jour par main.js pour indiquer si le menu est ouvert ou fermé.
+      -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+        aria-label="Ouvrir le menu principal"
+      >
+        <span class="menu-toggle-line" aria-hidden="true"></span>
+        <span class="menu-toggle-line" aria-hidden="true"></span>
+        <span class="menu-toggle-line" aria-hidden="true"></span>
+      </button>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Bureau d’études CVC & Thermique</h1>
-    <p>Ingénierie – Maîtrise d’œuvre – Performance énergétique</p>
-  </section>
-
-  <!-- SECTIONS PRINCIPALES -->
-  <section id="presentation" class="content">
-    <h2>Présentation</h2>
-    <p><strong>NF Ingénierie</strong> est un bureau d’études intervenant dans le domaine du bâtiment, spécialisé dans l’ingénierie et la maîtrise d’œuvre des lots techniques, pour des opérations de construction, de rénovation et de réhabilitation.</p>
-
-    <ul>
-      <li><strong>Génie climatique & plomberie</strong> : Chauffage, ventilation, climatisation et plomberie sanitaire, incluant les installations de production, de distribution et de régulation.</li>
-      <li><strong>Électricité</strong> : Installations électriques en courants forts et courants faibles, comprenant la distribution électrique, l’éclairage, les réseaux de communication et les systèmes de sûreté.</li>
-      <li><strong>Gestion Technique du bâtiment</strong> : Systèmes de gestion et de supervision des équipements techniques (GTC et GTB), permettant le pilotage et le suivi du fonctionnement des installations.</li>
-      <li><strong>Énergies renouvelables</strong> : Systèmes de production d’énergie à partir de sources renouvelables, notamment photovoltaïque, solaire thermique, géothermie, biomasse et cogénération.</li>
-      <li><strong>NF Ingénierie</strong> intervient sur des bâtiments tertiaires, résidentiels et industriels, pour le compte de maîtres d’ouvrage publics et privés.</li>
-    </ul>
-  </section>
-
-  <section id="clients" class="content">
-    <h2>Nos clients</h2>
-    <p><strong>NF Ingénierie</strong> intervient sur des opérations concernant: <br>
-      Des établissements recevant du public (ERP), des établissements recevant des travailleurs (ERT). <br>
-      Des bâtiments résidentiels et des immeubles de grande hauteur (IGH). <br>
-      Chaque typologie de bâtiment est abordée en tenant compte des exigences réglementaires spécifiques, des contraintes techniques et des conditions d’exploitation associées.
-    </p>
-  </section>
-
-  <section id="domaines" class="content">
-    <h2>Nos domaines</h2>
-    <p><strong>Les domaines d’intervention de NF Ingénierie comprennent:</strong></p>
-    <ul>
-      <li><strong>Génie climatique et plomberie :</strong> <br> Chauffage, ventilation, climatisation et plomberie sanitaire, incluant les installations de production, de distribution, de régulation et les réseaux associés.</li>
-      <li><strong>Électricité – courants forts et courants faibles :</strong> <br> Installations électriques en courants forts et courants faibles, comprenant la distribution électrique, l’éclairage, les réseaux de communication et les systèmes de sécurité et de sûreté.</li>
-      <li><strong>Gestion technique du bâtiment (GTC / GTB) :</strong> <br> Systèmes de gestion et de supervision des équipements techniques du bâtiment, permettant le pilotage et le suivi du fonctionnement des installations.</li>
-      <li><strong>Énergies et systèmes de production :</strong> <br> Systèmes de production d’énergie, incluant l’intégration de solutions à partir de sources renouvelables telles que le photovoltaïque, le solaire thermique, la géothermie, la biomasse et la cogénération.</li>
-    </ul>
-  </section>
-
-  <section id="actualites" class="content">
-    <h2>Actualités</h2>
-    <div class="actus-grid">
-
-      <article class="actu-card">
-        <div class="actu-content">
-          <h3>Titre de l’actualité</h3>
-          <p class="actu-date">Mars 2025</p>
-          <p>Texte de l’actualité. Présentation d’un projet, d’une mission, d’une évolution réglementaire ou d’une information importante concernant NF Ingénierie.</p>
-        </div>
-      </article>
-
-      <article class="actu-card">
-        <div class="actu-content">
-          <h3>Nouveau projet en cours</h3>
-          <p class="actu-date">Février 2025</p>
-          <p>Description du projet, du type de bâtiment, des lots techniques concernés et des objectifs énergétiques.</p>
-        </div>
-      </article>
-
+      <nav id="main-navigation" class="main-nav" aria-label="Navigation principale">
+        <a href="#presentation">Présentation</a>
+        <a href="#expertises">Expertises</a>
+        <a href="#missions">Missions</a>
+        <a href="#batiments">Bâtiments</a>
+        <a class="nav-cta" href="contact.html">Contact</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <section id="contact" class="content">
-    <h2>Contact</h2>
-    <form id="contactForm">
-      <input type="text" id="name" placeholder="Nom / Société" required>
-      <input type="email" id="email" placeholder="Email" required>
-      <textarea id="message" placeholder="Votre projet" required></textarea>
-      <button type="submit">Envoyer</button>
-      <p id="formStatus" class="form-status"></p>
-    </form>
-  </section>
+  <main id="contenu">
+    <!-- =========================
+         HERO / ACCROCHE PRINCIPALE
+    ========================== -->
+    <section id="accueil" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Bureau d’études techniques</p>
+          <h1 id="hero-title">L’ingénierie des lots techniques, de l’étude à la réception.</h1>
+          <p class="hero-lead">
+            NF Ingénierie accompagne les opérations de construction, de rénovation
+            et de réhabilitation en génie climatique, électricité, gestion technique
+            du bâtiment et performance énergétique.
+          </p>
 
-  <!-- MISSIONS SUR PAGE D'ACCUEIL -->
-  <section id="missions-home" class="content">
-    <h2>Nos missions</h2>
-    <div class="missions-grid">
+          <div class="hero-actions" aria-label="Actions principales">
+            <a class="button button-primary" href="#expertises">Découvrir nos expertises</a>
+            <a class="button button-secondary" href="contact.html">Parler de votre projet</a>
+          </div>
 
-      <div class="mission-card" data-mission="etudes">
-        <h3>Conseils & Études</h3>
-        <ul class="mission-preview">
-          <li>Audit</li>
-          <li>Diagnostic technique</li>
-          <li>Faisabilité</li>
-        </ul>
+          <!--
+            Ces trois repères reprennent uniquement des domaines déjà présents
+            dans le site d'origine ; ils ne constituent ni chiffres ni promesses inventées.
+          -->
+          <ul class="hero-tags" aria-label="Principaux domaines d’intervention">
+            <li>CVC &amp; thermique</li>
+            <li>Électricité &amp; GTB</li>
+            <li>Maîtrise d’œuvre</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-label="Identité NF Ingénierie">
+          <div class="hero-logo-panel">
+            <img
+              src="assets/images/logo-nf-ingenierie.png"
+              alt=""
+              width="1230"
+              height="1209"
+              aria-hidden="true"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         PRÉSENTATION
+    ========================== -->
+    <section id="presentation" class="section section-light" aria-labelledby="presentation-title">
+      <div class="container split-layout">
+        <div class="section-heading">
+          <p class="eyebrow">NF Ingénierie</p>
+          <h2 id="presentation-title">Un bureau d’études au service des projets de bâtiment</h2>
+        </div>
+
+        <div class="prose prose-large">
+          <p>
+            NF Ingénierie intervient dans l’ingénierie et la maîtrise d’œuvre des lots
+            techniques du bâtiment. Les missions concernent aussi bien les opérations
+            neuves que la rénovation et la réhabilitation.
+          </p>
+          <p>
+            L’accompagnement couvre l’analyse de l’existant, les études de conception,
+            la consultation des entreprises et le suivi de l’exécution, avec une lecture
+            coordonnée des enjeux techniques et énergétiques.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         EXPERTISES
+    ========================== -->
+    <section id="expertises" class="section" aria-labelledby="expertises-title">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <p class="eyebrow">Domaines d’intervention</p>
+            <h2 id="expertises-title">Des expertises techniques complémentaires</h2>
+          </div>
+          <p>
+            Les installations sont étudiées dans leur ensemble afin de conserver une
+            cohérence entre confort, fonctionnement, exploitation et performance énergétique.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <span class="card-number" aria-hidden="true">01</span>
+            <h3>Génie climatique &amp; plomberie</h3>
+            <p>
+              Chauffage, ventilation, climatisation et plomberie sanitaire : production,
+              distribution, régulation et réseaux associés.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <span class="card-number" aria-hidden="true">02</span>
+            <h3>Électricité</h3>
+            <p>
+              Courants forts et courants faibles, distribution électrique, éclairage,
+              réseaux de communication, sécurité et sûreté.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <span class="card-number" aria-hidden="true">03</span>
+            <h3>GTC / GTB</h3>
+            <p>
+              Gestion, supervision et pilotage des équipements techniques pour faciliter
+              le suivi du fonctionnement des installations.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <span class="card-number" aria-hidden="true">04</span>
+            <h3>Énergie &amp; renouvelables</h3>
+            <p>
+              Études de solutions intégrant notamment photovoltaïque, solaire thermique,
+              géothermie, biomasse, cogénération et récupération de chaleur.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         MISSIONS
+    ========================== -->
+    <section id="missions" class="section section-dark" aria-labelledby="missions-title">
+      <div class="container">
+        <div class="section-intro section-intro-light">
+          <div>
+            <p class="eyebrow eyebrow-light">Du diagnostic à la réception</p>
+            <h2 id="missions-title">Des missions organisées autour du cycle du projet</h2>
+          </div>
+          <p>
+            Trois familles de prestations permettent d’adapter l’intervention à la phase
+            du projet et au niveau d’accompagnement recherché.
+          </p>
+        </div>
+
+        <div class="mission-grid">
+          <article class="mission-card">
+            <p class="mission-kicker">Conseil &amp; études</p>
+            <h3>Comprendre, diagnostiquer et définir les solutions</h3>
+            <ul class="check-list">
+              <li>Audits énergétiques et diagnostics techniques</li>
+              <li>Études thermiques, STD / SED et confort</li>
+              <li>Faisabilité et études réglementaires</li>
+              <li>Décret Tertiaire et Décret BACS</li>
+              <li>Études d’énergies renouvelables</li>
+            </ul>
+          </article>
+
+          <article class="mission-card">
+            <p class="mission-kicker">Maîtrise d’œuvre &amp; ingénierie</p>
+            <h3>Concevoir et préparer la réalisation</h3>
+            <ul class="check-list">
+              <li>ESQ / DIAG : intentions et analyse de l’existant</li>
+              <li>APS / APD : orientations et consolidation</li>
+              <li>PRO / DCE : études détaillées et consultation</li>
+              <li>ACT : assistance à la passation des marchés</li>
+            </ul>
+          </article>
+
+          <article class="mission-card">
+            <p class="mission-kicker">Exécution &amp; pilotage</p>
+            <h3>Accompagner les travaux jusqu’à la réception</h3>
+            <ul class="check-list">
+              <li>EXE : études d’exécution</li>
+              <li>VISA : examen des documents des entreprises</li>
+              <li>DET : suivi de l’exécution des travaux</li>
+              <li>OPR : opérations préalables à la réception</li>
+              <li>AOR : assistance à la réception</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         MÉTHODE
+    ========================== -->
+    <section class="section method-section" aria-labelledby="method-title">
+      <div class="container">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow">Méthode</p>
+          <h2 id="method-title">Une lecture structurée du projet</h2>
+          <p>
+            L’organisation des missions suit une progression simple, lisible et adaptée
+            aux différentes étapes de conception et de réalisation.
+          </p>
+        </div>
+
+        <ol class="process-list">
+          <li>
+            <span class="process-number">01</span>
+            <div>
+              <h3>Analyser</h3>
+              <p>Comprendre l’existant, les besoins, les contraintes et les objectifs du projet.</p>
+            </div>
+          </li>
+          <li>
+            <span class="process-number">02</span>
+            <div>
+              <h3>Concevoir</h3>
+              <p>Définir, comparer et détailler les solutions techniques adaptées à l’opération.</p>
+            </div>
+          </li>
+          <li>
+            <span class="process-number">03</span>
+            <div>
+              <h3>Consulter</h3>
+              <p>Préparer les pièces techniques et accompagner la consultation des entreprises.</p>
+            </div>
+          </li>
+          <li>
+            <span class="process-number">04</span>
+            <div>
+              <h3>Accompagner</h3>
+              <p>Suivre l’exécution, contrôler les documents et préparer la réception des travaux.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================
+         TYPES DE BÂTIMENTS
+    ========================== -->
+    <section id="batiments" class="section section-soft" aria-labelledby="buildings-title">
+      <div class="container split-layout align-start">
+        <div class="section-heading">
+          <p class="eyebrow">Typologies de projets</p>
+          <h2 id="buildings-title">Des interventions adaptées au contexte du bâtiment</h2>
+        </div>
+
+        <div>
+          <p class="prose intro-copy">
+            NF Ingénierie intervient sur des bâtiments tertiaires, résidentiels et industriels,
+            pour des maîtres d’ouvrage publics et privés. Les études tiennent compte des
+            exigences propres à chaque typologie et de ses conditions d’exploitation.
+          </p>
+
+          <ul class="building-list">
+            <li>
+              <strong>ERP</strong>
+              <span>Établissements recevant du public</span>
+            </li>
+            <li>
+              <strong>ERT</strong>
+              <span>Établissements recevant des travailleurs</span>
+            </li>
+            <li>
+              <strong>Résidentiel</strong>
+              <span>Bâtiments et immeubles d’habitation</span>
+            </li>
+            <li>
+              <strong>IGH</strong>
+              <span>Immeubles de grande hauteur</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         APPEL À L’ACTION
+    ========================== -->
+    <section class="contact-cta" aria-labelledby="cta-title">
+      <div class="container cta-inner">
+        <div>
+          <p class="eyebrow eyebrow-light">Votre projet</p>
+          <h2 id="cta-title">Vous avez une étude, une rénovation ou une opération à préparer&nbsp;?</h2>
+          <p>
+            Présentez votre besoin à NF Ingénierie afin d’identifier la mission et le niveau
+            d’accompagnement adaptés à votre projet.
+          </p>
+        </div>
+        <a class="button button-light" href="contact.html">Contacter NF Ingénierie</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       PIED DE PAGE
+  ========================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="footer-brand" href="#accueil">NF Ingénierie</a>
+        <p>Bureau d’études techniques — Ingénierie &amp; Conseil.</p>
       </div>
 
-      <div class="mission-card" data-mission="moe">
-        <h3>Maîtrise d'œuvre & Ingénierie</h3>
-        <ul class="mission-preview">
-          <li>ESQ</li>
-          <li>AVP</li>
-          <li>PRO-DCE</li>
-          <li>ACT</li>
-        </ul>
-      </div>
+      <nav class="footer-nav" aria-label="Navigation de pied de page">
+        <a href="#expertises">Expertises</a>
+        <a href="#missions">Missions</a>
+        <a href="#batiments">Bâtiments</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-      <div class="mission-card" data-mission="exe">
-        <h3>Exécution & Pilotage</h3>
-        <ul class="mission-preview">
-          <li>EXE</li>
-          <li>VISA</li>
-          <li>DET</li>
-          <li>OPR</li>
-          <li>AOR</li>
-        </ul>
+      <div class="footer-contact">
+        <a href="mailto:contact@nf-ingenierie.fr">contact@nf-ingenierie.fr</a>
+        <p>Zone d’intervention : France entière</p>
       </div>
-
     </div>
-  </section>
 
-  <!-- DÉTAILS DES MISSIONS -->
-  <section id="etudes" class="content mission-detail-page">
-    <h2>Conseils & Études</h2>
+    <div class="container footer-bottom">
+      <p>© <span data-current-year>2026</span> NF Ingénierie.</p>
+      <p>Aucun outil d’analyse d’audience n’est intégré au code du site.</p>
+    </div>
+  </footer>
 
-    <h4>1) Audits & diagnostics techniques</h4>
-    <ul>
-      <li>Audits énergétiques réglementaires</li>
-      <li>Audits fonctionnels des installations CVC</li>
-      <li>Inspections par caméra thermique</li>
-    </ul>
-
-    <h4>2) Études réglementaires & thermiques</h4>
-    <ul>
-      <li>RT 2012 – RE 2020 – THCE ex</li>
-      <li>DPE – Diagnostics de performance énergétique</li>
-      <li>Simulation thermique STD / SED</li>
-      <li>Confort thermique et QAI</li>
-      <li>Solutions passives</li>
-    </ul>
-
-    <h4>3) Réglementation & conformité énergétique</h4>
-    <ul>
-      <li>Décret Tertiaire</li>
-      <li>Décret BACS</li>
-      <li>Suivi réglementaire</li>
-    </ul>
-
-    <h4>4) Ingénierie CVC & exploitation</h4>
-    <ul>
-      <li>Audits et optimisation CVC</li>
-      <li>Inventaire équipements</li>
-      <li>Marchés d’exploitation</li>
-    </ul>
-
-    <h4>5) Financements & performance économique</h4>
-    <ul>
-      <li>Dossiers CEE</li>
-      <li>Optimisation financière</li>
-    </ul>
-
-    <h4>6) Énergies renouvelables</h4>
-    <ul>
-      <li>Photovoltaïque</li>
-      <li>Solaire thermique</li>
-      <li>Cogénération</li>
-      <li>Géothermie</li>
-      <li>Biomasse</li>
-      <li>Récupération de chaleur</li>
-    </ul>
-  </section>
-
-  <section id="moe" class="content mission-detail-page">
-    <h2>Maîtrise d'œuvre & Ingénierie</h2>
-    <ul>
-      <li><strong>ESQ :</strong> définition des intentions et principes techniques</li>
-      <li><strong>DIAG :</strong> analyse de l’existant</li>
-      <li><strong>APS :</strong> orientations techniques et faisabilité</li>
-      <li><strong>APD :</strong> consolidation des choix et coûts</li>
-      <li><strong>PRO :</strong> études détaillées du projet</li>
-      <li><strong>DCE :</strong> consultation des entreprises</li>
-      <li><strong>ACT :</strong> assistance à la passation des marchés</li>
-    </ul>
-  </section>
-
-  <section id="exe" class="content mission-detail-page">
-    <h2>Exécution & Pilotage</h2>
-    <ul>
-      <li><strong>EXE :</strong> études d’exécution</li>
-      <li><strong>VISA :</strong> visa des documents entreprises</li>
-      <li><strong>DET :</strong> suivi de l’exécution des travaux</li>
-      <li><strong>OPR :</strong> opérations préalables à la réception</li>
-      <li><strong>AOR :</strong> assistance à la réception</li>
-    </ul>
-  </section>
-
-</main>
-
-<footer>
-  © 2026 NF Ingénierie
-</footer>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/contact.js"></script>
+  <!-- Le script est différé implicitement car placé juste avant la fin du body. -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
