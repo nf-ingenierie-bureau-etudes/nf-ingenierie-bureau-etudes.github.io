@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://nf-ingenierie-bureau-etudes.github.io/sitemap.xml
